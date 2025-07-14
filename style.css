@@ -1,0 +1,152 @@
+:root {
+  --main-color: #0077ff;
+  --hover-color: #141936;
+  --text-color: #333;
+  --bg-color: #f5f7fa;
+  --nav-bg: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: var(--nav-bg);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+header.scrolled {
+  background-color: #e9ecef;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.logo {
+  font-size: 1.5rem;
+  color: var(--main-color);
+  font-weight: bold;
+}
+
+nav a {
+  color: var(--text-color);
+  text-decoration: none;
+  margin-left: 1.5rem;
+  padding: 0.5rem;
+  transition: 0.3s ease-in-out;
+  border-radius: 5px;
+}
+
+nav a:hover {
+  background-color: var(--hover-color);
+  color: #fff;
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: 80px;
+  background: linear-gradient(135deg, #e0f7ff, #ffffff);
+}
+
+.hero h1 {
+  font-size: 3rem;
+  color: var(--main-color);
+}
+
+.hero p {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #555;
+}
+
+section {
+  padding: 5rem 2rem;
+  background-color: #ffffff;
+}
+
+#about {
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+#about p {
+  max-width: 700px;
+  margin: auto;
+  color: #444;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--main-color);
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.feature-box {
+  background-color: #f1f3f5;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  transition: 0.3s;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.feature-box:hover {
+  transform: translateY(-5px);
+  background-color: #e3f2fd;
+}
+
+.feature-box h3 {
+  color: var(--main-color);
+  margin-bottom: 1rem;
+}
+
+.social-icons {
+  text-align: center;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  font-size: 1.8rem;
+  color: var(--main-color);
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: var(--hover-color);
+}
+
+footer {
+  background-color: var(--nav-bg);
+  padding: 2rem;
+  text-align: center;
+  color: #777;
+}
